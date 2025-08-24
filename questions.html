@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Question Screen -->
+    <div class="box" id="questionScreen">
+        <div class="title">Online Quiz</div>
+        <div class="header">
+            <div class="scoreBox">Attempt: <span>0</span></div>
+            <div class="timerBox">Time left: <span>3:20</span></div>
+        </div>
+        <div class="questionBox"></div>
+        <div class="optionBox">
+            <span data-opt="0"></span>
+            <span data-opt="1"></span>
+            <span data-opt="2"></span>
+            <span data-opt="3"></span>
+        </div>
+        <div class="footer">
+            <div class="con">
+                <button id="prevBtn">← Previous</button>
+            </div>
+            <div class="con">
+                <button id="nextBtn">Next →</button>
+            </div>
+        </div>
+        <div class="count">Question <span>1</span> / 10</div>
+    </div>
+
+    <!-- Result Screen -->
+    <div class="box hidden" id="resultScreen">
+        <div class="title">Result</div>
+        <div class="scoreBoard">Total Score: <span>0</span></div>
+        <div class="resultBox">
+            <label>Questions:</label> <span id="totalQuestion">0</span>
+            <label>Attempt:</label> <span id="attemptQuestion">0</span>
+            <label>Correct:</label> <span id="correctQuestion">0</span>
+            <label>Wrong:</label> <span id="wrongAnswers">0</span>
+        </div>
+        <div class="buttonBox">
+            <a href="#" id="restartBtn">Start Again</a>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

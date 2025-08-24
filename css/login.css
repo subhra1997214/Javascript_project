@@ -1,0 +1,99 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card Container */
+.container {
+    background: #fff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 380px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: #222;
+    font-size: 1.8rem;
+}
+
+.subtitle {
+    font-size: 0.95rem;
+    color: #666;
+    margin-bottom: 25px;
+}
+
+/* Form */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input {
+    padding: 12px 14px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #4facfe;
+    box-shadow: 0 0 6px rgba(79, 172, 254, 0.5);
+    outline: none;
+}
+
+/* Button */
+.btn-login {
+    background: linear-gradient(135deg, #4facfe, #00c6fb);
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.3s;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 172, 254, 0.4);
+}
+
+/* Links */
+p {
+    margin-top: 15px;
+    font-size: 0.9rem;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
