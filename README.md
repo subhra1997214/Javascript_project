@@ -10,3 +10,5 @@ The Online Quiz Application is a browser-based quiz platform built with HTML, CS
 - Works offline, no server needed.
 <br><br>
 <br><br>
+**Technologies Used:** <br>
+  Javascript, Localstorage, HTML, CSS
